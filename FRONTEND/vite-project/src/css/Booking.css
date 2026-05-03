@@ -1,0 +1,103 @@
+.booking-container {
+          padding: 30px;
+          background: #f5f6f8;
+          min-height: 100vh;
+        }
+
+        .title {
+          margin-bottom: 20px;
+        }
+
+        .booking-card {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #fff;
+          padding: 15px 20px;
+          margin-bottom: 15px;
+          border-radius: 12px;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .booking-img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 12px;
+        }
+
+        .booking-info {
+          flex: 1;
+          margin-left: 20px;
+        }
+
+        .booking-info h2 {
+          margin: 0;
+          font-size: 18px;
+        }
+
+        .booking-info p {
+          margin: 5px 0;
+          color: #666;
+        }
+
+        .price {
+          font-weight: bold;
+          color: #333;
+        }
+
+        .booking-actions {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .status {
+          padding: 5px 12px;
+          border-radius: 20px;
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+        .approved {
+          background: #d1f5e0;
+          color: #0a7d4f;
+        }
+
+        .pending {
+          background: #ffe8cc;
+          color: #d97706;
+        }
+
+        .rejected {
+          background: #ffd6d6;
+          color: #c92a2a;
+        }
+
+        button {
+          padding: 6px 12px;
+          border-radius: 8px;
+          border: none;
+          cursor: pointer;
+          font-size: 13px;
+        }
+
+        .approve-btn {
+          background: #0ea5e9;
+          color: white;
+        }
+
+        .reject-btn {
+          background: #ef4444;
+          color: white;
+        }
+
+        .cancel-btn {
+          border: 1px solid red;
+          background: transparent;
+          color: red;
+        }
+
+        button:hover {
+          opacity: 0.85;
+        }

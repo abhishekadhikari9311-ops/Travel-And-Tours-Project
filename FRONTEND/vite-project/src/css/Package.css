@@ -1,0 +1,113 @@
+.package-container {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background: #f8f9fb;
+}
+
+/* HEADER */
+.package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.package-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.add-btn {
+  background: #1f8a70;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-btn:hover {
+  background: #166a56;
+}
+
+/* FORM */
+.package-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.package-form h2 {
+  margin-bottom: 15px;
+}
+
+.package-form form {
+  display: grid;
+  gap: 10px;
+}
+
+.package-form input,
+.package-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.save-btn {
+  background: #1f8a70;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* TABLE */
+.package-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.package-table th {
+  background: #f1f1f1;
+  padding: 14px;
+  text-align: left;
+}
+
+.package-table td {
+  padding: 14px;
+  border-top: 1px solid #eee;
+}
+
+.price {
+  color: #1f8a70;
+  font-weight: bold;
+}
+
+/* ACTION BUTTONS */
+.edit-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: red;
+  font-size: 16px;
+}

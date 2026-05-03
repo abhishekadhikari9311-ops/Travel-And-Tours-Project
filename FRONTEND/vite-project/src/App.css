@@ -1,0 +1,88 @@
+/* --- 1. GLOBAL VARIABLES & RESET --- */
+:root {
+  --primary-teal: #2cb6a0;
+  --dark-navy: #1a222e;
+  --accent-orange: #ff7043;
+  --light-gray: #f4f7f6;
+  --sidebar-width: 250px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+/* --- 2. LAYOUT ENGINE --- */
+
+/* Base layout container */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  transition: margin-left 0.3s ease; /* Smooth transition between views */
+}
+
+/* FIX: Remove the global margin-left from .main-layout.
+   Only apply margins when the ADMIN navbar is present.
+*/
+
+/* --- 3. PUBLIC VIEW (Homepage, About, etc.) --- */
+/* When navbar-public is used, the layout stays at 0 margin (Full Width) */
+.navbar-public + .main-layout {
+  margin-left: 0;
+}
+
+.navbar-public + .main-layout .body-content {
+  padding: 0; /* Allows hero images to touch the edges like in your UI */
+}
+
+/* --- 4. ADMIN VIEW (Dashboard, Bookings, etc.) --- */
+/* When navbar-admin is used, push everything to the right */
+.navbar-admin + .main-layout {
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  background-color: var(--light-gray);
+}
+
+.body-content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* --- 5. COMPONENT SPECIFIC STYLING (To match your UI) --- */
+
+/* Hero Section for Public Home */
+.hero-container {
+  width: 100%;
+  height: 85vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("your-image-path.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* --- 6. FOOTER LOGIC --- */
+.footer {
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Ensure footer also shifts in admin mode */
+.navbar-admin + .main-layout .footer {
+  border-top: 1px solid #333;
+}

@@ -1,0 +1,117 @@
+/* Container & Global Typography */
+.admin-container {
+  padding: 40px;
+  background-color: #fafaf9; /* Matches the subtle off-white background */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.main-title, .form-title {
+  font-family: 'Playfair Display', serif; /* Serif font as seen in 'Destinations' header */
+  color: #1a2a3a;
+  margin: 0;
+}
+
+/* Header Section Styling */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.top-add-btn {
+  background-color: #268a7b; /* The signature teal color from the image */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Modal and Card Styling */
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+}
+
+.form-card {
+  background: white;
+  width: 100%;
+  max-width: 850px;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f0;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.close-icon {
+  font-size: 20px;
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+/* Form Grid Layout */
+.destination-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-row input, .input-row select {
+  flex: 1; /* Makes columns grow equally */
+}
+
+/* Shared Input/Select/Textarea Styling */
+input, 
+textarea, 
+select,
+.file-input {
+  padding: 15px 20px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  background-color: #fdfdfd;
+  font-size: 15px;
+  color: #444;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b0b0b0;
+}
+
+input:focus, textarea:focus {
+  border-color: #268a7b; /* Highlight border on focus */
+}
+
+/* Update Button Styling */
+.submit-update-btn {
+  background-color: #268a7b;
+  color: white;
+  border: none;
+  width: fit-content;
+  padding: 12px 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-update-btn:hover {
+  background-color: #1f7366;
+}

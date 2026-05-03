@@ -1,0 +1,118 @@
+.reviews-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfcfc;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  color: #1a2b48;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.review-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.post-section h3 {
+  margin-top: 0;
+  color: #1a2b48;
+  font-size: 1.4rem;
+}
+
+.review-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.star-rating {
+  margin: 15px 0;
+}
+
+.star-icon {
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-right: 5px;
+  transition: transform 0.1s;
+}
+
+.star-icon:hover {
+  transform: scale(1.1);
+}
+
+.submit-btn {
+  background-color: #1d7a72;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #16615a;
+}
+
+/* Review Item List Styling */
+.item-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #1a2b48;
+}
+
+.on-text {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.review-content {
+  color: #5e6d77;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.review-date {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.delete-btn:hover {
+  background: #fff5f5;
+  border-radius: 4px;
+}

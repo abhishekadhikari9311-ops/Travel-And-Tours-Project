@@ -1,0 +1,124 @@
+/* Container & Header */
+.admin-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.main-title {
+  font-family: serif; /* Matches the 'Destinations' font in image */
+  font-size: 32px;
+  color: #1a2a3a;
+}
+
+.top-add-btn {
+  background-color: #1a8a7a; /* Teal color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Modal Form Card */
+.form-card {
+  background: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.form-title {
+  font-family: serif;
+  font-size: 22px;
+  color: #1a2a3a;
+}
+
+.close-icon {
+  color: #999;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Form Layout */
+.destination-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-row input,
+.input-row select {
+  flex: 1; /* Makes both inputs in a row equal width */
+}
+
+/* Inputs, Textarea, and Select */
+input,
+textarea,
+select,
+.file-input {
+  padding: 14px 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  font-size: 15px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1a8a7a;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.submit-add-btn {
+  background-color: #1a8a7a;
+  color: white;
+  border: none;
+  width: fit-content;
+  padding: 12px 35px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: opacity 0.2s;
+}
+
+.submit-add-btn:hover {
+  opacity: 0.9;
+}

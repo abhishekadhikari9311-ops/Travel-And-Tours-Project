@@ -1,0 +1,454 @@
+/* .navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+    
+} */
+
+/* General Reset & Layout */
+/* .navbar-container {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 5%;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+} */
+
+/* Brand/Logo Styling */
+
+/* --- UNIVERSAL BRAND STYLING --- */
+/* .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.brand-icon {
+  color: #2bb09c;
+  font-size: 1.5rem;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: serif;
+  color: #ffffff; /* Default for dark mode sidebar */
+
+/* --- 1. PUBLIC TOP NAVBAR (Horizontal Row) --- */
+/* 
+
+.navbar-public {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding: 0 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-public .brand-name {
+  color: #1a1f2b; /* Dark text for light header 
+}
+
+.navbar-public .nav-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.navbar-public .nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.navbar-public .nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.navbar-public .nav-links a.active {
+  color: #2bb09c;
+  background-color: #f0f9f8;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.navbar-public .register-btn {
+  background-color: #2bb09c;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+.navbar-admin {
+  width: 260px;
+  height: 100vh;
+  background-color: #1a1f2b;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-admin .nav-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar-admin .nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  flex-grow: 1;
+}
+
+.navbar-admin .nav-links a {
+  text-decoration: none;
+  color: #a0aec0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.navbar-admin .nav-links a.active {
+  background-color: #2bb09c;
+  color: white;
+}
+
+.navbar-admin .nav-links a:hover:not(.active) {
+  background-color: #2d3748;
+  color: white;
+}
+
+
+.admin-footer {
+  padding: 20px 0;
+  border-top: 1px solid #2d3748;
+  margin-top: auto;
+}
+
+.user-info {
+  color: #718096;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.logout-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.body-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f7fa;
+}
+
+.footer {
+  background: #1a1f2b;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+   
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-navy);
+}
+
+.brand-icon {
+  transform: rotate(-45deg);
+  display: inline-block;
+}
+
+
+.navbar-public {
+  width: 100%;
+  padding: 20px 5%;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-public .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-public .nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-public .nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.navbar-public .nav-links a.active {
+  color: var(--primary-teal);
+  border-bottom: 2px solid var(--primary-teal);
+}
+
+.navbar-public .register-btn {
+  background-color: var(--primary-teal);
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+.navbar-admin {
+  width: 250px;
+  height: 100vh;
+  background-color: var(--dark-navy);
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 25px 0;
+}
+
+.navbar-admin .nav-brand {
+  padding: 0 20px 40px 20px;
+  color: white;
+}
+
+.navbar-admin .nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-admin .nav-links a {
+  padding: 15px 25px;
+  color: #a0aec0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar-admin .nav-links a:hover, 
+.navbar-admin .nav-links a.active {
+  background-color: var(--primary-teal);
+  color: white;
+}
+
+.navbar-admin .admin-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid #2d3748;
+}
+
+.navbar-admin .logout-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+} */
+
+/* new styles for admin dashboard */
+
+/* General Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==========================================
+   1. PUBLIC NAVBAR (Horizontal Top Bar)
+   ========================================== */
+.navbar-public {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-public .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.navbar-public .nav-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+.navbar-public .brand-icon {
+  margin-right: 8px;
+  color: #0984e3;
+}
+
+.navbar-public .nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-public .nav-links a {
+  text-decoration: none;
+  color: #636e72;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-public .nav-links a:hover,
+.navbar-public .nav-links a.active {
+  color: #0984e3;
+}
+
+.navbar-public .nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-public .login-link {
+  text-decoration: none;
+  color: #2d3436;
+}
+
+.navbar-public .register-btn {
+  background-color: #0984e3;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.navbar-public .register-btn:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================
+   2. ADMIN NAVBAR (Vertical Sidebar)
+   ========================================== */
+.navbar-admin {
+  background-color: #2c3e50;
+  width: 260px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #ecf0f1;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-admin .nav-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar-admin .nav-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 1rem;
+}
+
+.navbar-admin .nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1; /* Pushes auth section to bottom */
+}
+
+.navbar-admin .nav-links a {
+  text-decoration: none;
+  color: #bdc3c7;
+  padding: 12px 15px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.navbar-admin .nav-links a:hover,
+.navbar-admin .nav-links a.active {
+  background-color: #34495e;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+/* Admin Bottom Section (User info & Logout) */
+.navbar-admin .admin-footer {
+  border-top: 1px solid #34495e;
+  padding-top: 1.5rem;
+  margin-top: auto;
+}
+
+.navbar-admin .user-info {
+  font-size: 0.85rem;
+  color: #95a5a6;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.navbar-admin .logout-link {
+  display: block;
+  text-decoration: none;
+  color: #e74c3c;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: transform 0.2s;
+}
+
+.navbar-admin .logout-link:hover {
+  transform: translateX(5px);
+}

@@ -1,0 +1,169 @@
+.dest-home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px;
+  width: 45%;
+  border: 8px solid red;
+}
+
+.dest-home img {
+  width: 100%;
+  height: auto;
+}
+
+.dest-home h2 {
+  font-size: 1.5rem;
+}
+
+.home-highlights-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.home-highlight-badge {
+  background-color: #eaf5f5;
+  color: #008080;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.home-dest-highlights h4 {
+  margin-bottom: 10px;
+}
+
+.home-dest-country {
+  font-size: 1.2rem;
+}
+
+.home-besttime {
+  font-size: 1.2rem;
+  color: purple;
+}
+
+.home-like {
+  color: blue;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.featured-destinations {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #666;
+}
+
+.newsletter {
+  background: #1f6f63;
+  padding: 70px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-container {
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+}
+
+.newsletter h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  color: #cfe7e3;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* form layout */
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* input */
+
+.subscribe-form input {
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  font-size: 16px;
+  width: 320px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+/* placeholder color */
+
+.subscribe-form input::placeholder {
+  color: #cde4df;
+}
+
+/* button */
+
+.subscribe-form button {
+  background: #ff6b3d;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+/* hover effect */
+
+.subscribe-form button:hover {
+  background: #e95b30;
+}
+
+@media (max-width:600px){
+
+  .subscribe-form{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .subscribe-form input{
+    width:100%;
+  }
+
+  .subscribe-form button{
+    width:100%;
+  }
+
+}
+

@@ -1,0 +1,82 @@
+.overview-container {
+  padding: 30px;
+  background: #f5f6f8;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #666;
+}
+
+.card p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-top: 10px;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.status.approved {
+  background: #d4edda;
+  color: #155724;
+}
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+.status.rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.stars span {
+  color: orange;
+  font-size: 16px;
+}
